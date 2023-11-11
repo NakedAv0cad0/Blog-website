@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# Complete-React-Tutorial
+All course files for the Complete React Tutorial on the Net Ninja YouTube channel.
+
+To use, select the correct branch for each Lesson. E.g for lesson 5 code, select the lesson-5 branch from the drop-down.
+>>>>>>> c50096b3ae12f92a03b88580361a413003b86b42
