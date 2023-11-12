@@ -1,13 +1,131 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.blog-preview {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 20rem;
+  border-top: 0.1rem solid #eee;
+  border-left: 0.1rem solid #eee;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.blog-preview:hover {
+  box-shadow: 0.1rem 0.1rem 0.1rem #c5bebe;
+  transform: translate(-2px, -2px);
+}
+.blog-preview h2 {
+  color: #f1356d;
+  margin-bottom: 0.5rem;
+}
+.blog-preview span {
+  align-self: flex-end;
+}
+.blog-preview button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(101%);
+  border: none;
+  padding: 0.3rem 0.5rem;
+  color: white;
+  font-weight: bold;
+  background-color: #f1356d;
+  border-bottom-left-radius: 0.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.blog-preview:hover button {
+  transform: translateX(0);
+}
+.blog-preview a {
+  text-decoration: none;
+}
+/* blog details page */
+.blog-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.blog-details div {
+  margin: 20px 0;
+}
+.blog-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+  font-weight: 500;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 500;
+}
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
